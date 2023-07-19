@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/system';
+import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 
 const StyledLink = styled(Typography)`
@@ -7,12 +8,19 @@ const StyledLink = styled(Typography)`
 `;
 
 type BasicLinkProps = {
+  to: string;
   children: React.ReactNode;
-  variant: string;
+  variant?: string;
 };
 
-const BasicLink = ({ children, ...props }: BasicLinkProps) => {
-  return <StyledLink {...props}>{children}</StyledLink>;
+const BasicLink = ({ to, children, ...props }: BasicLinkProps) => {
+  return (
+    <Link to={to} style={{ textDecoration: 'none' }}>
+      <StyledLink component='span' {...props}>
+        {children}
+      </StyledLink>
+    </Link>
+  );
 };
 
 export default BasicLink;
