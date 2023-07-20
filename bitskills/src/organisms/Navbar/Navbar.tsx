@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import BasicLink from '../atoms/BasicLink';
+import BasicLink from '../../atoms/BasicLink';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -17,8 +17,8 @@ const Navbar = () => {
         <BasicLink variant='h6' to='/about'>
           About
         </BasicLink>
-        <BasicLink variant='h6' to='/contact'>
-          Contact
+        <BasicLink variant='h6' to='/login'>
+          Login
         </BasicLink>
       </Toolbar>
     </AppBar>
