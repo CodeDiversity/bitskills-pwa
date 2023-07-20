@@ -1,9 +1,6 @@
 import React from 'react';
-import Navbar from '../../organisms/Navbar/Navbar';
 
-type Props = {};
-
-export default function Landing({}: Props) {
+export default function Landing() {
   return (
     <div>
       Landing Page
