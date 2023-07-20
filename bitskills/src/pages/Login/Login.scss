@@ -5,4 +5,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .header{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .inputField{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .submitButton{
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        .inputField{
+            width: 250px;
+        }
+    }
 }
