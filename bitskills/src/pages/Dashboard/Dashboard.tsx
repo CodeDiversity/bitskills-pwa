@@ -7,7 +7,7 @@ const Dashboard = () => {
  
   return (
     <div>
-      <h1>Home Screen</h1>
+      <h1>Dashboard</h1>
       <h2>Welcome, {username}!</h2>
       <div>
         <h3>Progress Overview</h3>

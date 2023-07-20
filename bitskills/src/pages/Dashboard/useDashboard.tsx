@@ -9,9 +9,8 @@ export const useDashboard = () => {
 
   const fetchUserProgressData = () => {
     // Simulated API call to retrieve user progress data
-    // Replace with actual API call in your implementation
     const userProgressData = {
-      username: 'JohnDoe',
+      username: 'Michael',
       completedTopics: 5,
       totalQuizzes: 10,
       averageScore: 80,
@@ -29,8 +28,6 @@ export const useDashboard = () => {
   const [averageScore, setAverageScore] = useState(0);
 
   const handleStartQuiz = () => {
-    // Redirect the user to the quiz screen
-    // Replace with actual redirect in your implementation
     console.log('Redirecting to quiz screen...');
   };
 
