@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import './Login.scss';
 import { TextField, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { useNavigate, redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuthentication } from '../../hooks/useAuthentication';
 
 export default function Login() {
