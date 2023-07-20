@@ -1,0 +1,13 @@
+[
+    { "id": 1, "name": "HTML", "description": "Introduction to HTML" },
+    { "id": 2, "name": "CSS", "description": "Introduction to CSS" },
+    { "id": 3, "name": "JavaScript", "description": "Introduction to JavaScript" },
+    { "id": 4, "name": "React", "description": "Building user interfaces with React" },
+    { "id": 5, "name": "Node.js", "description": "Server-side JavaScript with Node.js" },
+    { "id": 6, "name": "Express.js", "description": "Creating web applications with Express.js" },
+    { "id": 7, "name": "MongoDB", "description": "Introduction to MongoDB and NoSQL databases" },
+    { "id": 8, "name": "Responsive Web Design", "description": "Designing websites for various devices" },
+    { "id": 9, "name": "API Development", "description": "Creating and consuming APIs" },
+    { "id": 10, "name": "Authentication and Authorization", "description": "Securing web applications" }
+  ]
+  

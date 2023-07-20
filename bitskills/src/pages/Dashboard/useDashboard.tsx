@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const useDashboard = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     // Fetch user progress data from the backend API
     // and update the state variables
@@ -28,7 +30,7 @@ export const useDashboard = () => {
   const [averageScore, setAverageScore] = useState(0);
 
   const handleStartQuiz = () => {
-    console.log('Redirecting to quiz screen...');
+    navigate('/topics');
   };
 
   return {
