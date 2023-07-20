@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 
 const useAuthentication = () => {
@@ -16,6 +16,15 @@ const useAuthentication = () => {
     localStorage.removeItem('token');
     setIsAuthenticated(false);
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setToken(token);
+      setIsAuthenticated(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return { isAuthenticated, token, login, logout };
 };
