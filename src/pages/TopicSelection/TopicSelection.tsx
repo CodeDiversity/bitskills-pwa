@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import topicsData from '../../data/topics.json';
 import { useNavigate } from 'react-router-dom';
+import './TopicSelection.scss';
 
 interface Topic {
   id: number;
@@ -27,15 +28,15 @@ const TopicsPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="topic-container">
       <h1>Topics Page</h1>
       <h2>Select a Web Development Topic</h2>
-      <ul>
+      <ul className='topic-list'>
         {topics.map((topic) => (
           <li
             key={topic.id}
             onClick={() => handleTopicSelection(topic)}
-            className={selectedTopic === topic ? 'selected' : ''}
+            className={selectedTopic === topic ? 'selected-square' : 'square'}
           >
             <h3>{topic.name}</h3>
             <p>{topic.description}</p>
@@ -44,7 +45,7 @@ const TopicsPage: React.FC = () => {
       </ul>
       {selectedTopic && (
         <>
-          <p>You have selected: {selectedTopic.name}</p>
+          <p className="selected-topic">You have selected: {selectedTopic.name}</p>
         </>
         // Display any additional information or actions related to the selected topic
       )}

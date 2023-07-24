@@ -49,7 +49,7 @@ export default function Login() {
         className='inputField'
         {...register('password', { required: true })}
       />
-      {errors && <span>This field is required</span>}
+      {errors.password && <span>This field is required</span>}
       <Button className='submitButton' variant='contained' type='submit'>
         Submit
       </Button>
