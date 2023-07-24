@@ -6,6 +6,7 @@ import Layout from './Layout';
 import Login from './pages/Login/Login';
 import { AuthContextProvider } from './contexts/AuthContext';
 import TopicsPage from './pages/TopicSelection/TopicSelection';
+import QuizPage from './pages/QuizPage/QuizPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path='/' element={<Landing />} />
             <Route path='/login' element={<Login />} />
             <Route path='/topics' element={<TopicsPage />} />
+            <Route path='/quiz/:topicId' element={<QuizPage />} />
           </Routes>
         </Layout>
       </AuthContextProvider>

@@ -1,0 +1,104 @@
+{
+    "questions": [
+      {
+        "question": "What is React.js?",
+        "options": [
+          "A JavaScript framework for building user interfaces.",
+          "A server-side programming language.",
+          "A database management system.",
+          "A CSS preprocessor."
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "Which virtual DOM is used by React.js?",
+        "options": [
+          "HTML DOM",
+          "React DOM",
+          "Shadow DOM",
+          "Vue DOM"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "question": "What does JSX stand for?",
+        "options": [
+          "JavaScript XML",
+          "Java Syntax Extension",
+          "JavaScript Syntax XML",
+          "Java XML"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "What is the main purpose of React components?",
+        "options": [
+          "Handling server-side operations.",
+          "Managing databases.",
+          "Creating reusable UI building blocks.",
+          "Optimizing network requests."
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "question": "In React, which method is used to update the component state?",
+        "options": [
+          "setState()",
+          "updateState()",
+          "changeState()",
+          "modifyState()"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "What tool can be used for bootstrapping a new React.js project?",
+        "options": [
+          "npm",
+          "create-react-app",
+          "webpack",
+          "gulp"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "question": "What is the purpose of the 'render' method in React components?",
+        "options": [
+          "To define component styles.",
+          "To define component props.",
+          "To render the component to the DOM.",
+          "To define component state."
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "question": "What are React Hooks used for?",
+        "options": [
+          "Styling React components.",
+          "Managing asynchronous operations.",
+          "Adding animation effects.",
+          "Managing state in functional components."
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "question": "Which lifecycle method is called after a component is rendered for the first time?",
+        "options": [
+          "componentDidMount",
+          "componentDidUpdate",
+          "componentWillMount",
+          "rendered"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "In React, what is the purpose of 'props'?",
+        "options": [
+          "To store component state.",
+          "To interact with the server.",
+          "To pass data from parent to child components.",
+          "To manage component side effects."
+        ],
+        "correctAnswer": 2
+      }
+    ]
+  }

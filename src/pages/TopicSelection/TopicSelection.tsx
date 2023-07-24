@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import topicsData from '../../data/topics.json';
+import { useNavigate } from 'react-router-dom';
 
 interface Topic {
   id: number;
@@ -10,6 +11,7 @@ interface Topic {
 const TopicsPage: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
   const [topics, setTopics] = useState<Topic[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTopics(topicsData);
@@ -17,6 +19,11 @@ const TopicsPage: React.FC = () => {
 
   const handleTopicSelection = (topic: Topic) => {
     setSelectedTopic(topic);
+  };
+
+  const handleStartQuiz = () => {
+    // Navigate to the quiz page
+    navigate('/quiz/react')
   };
 
   return (
@@ -41,6 +48,7 @@ const TopicsPage: React.FC = () => {
         </>
         // Display any additional information or actions related to the selected topic
       )}
+      <button onClick={handleStartQuiz}>Start Quiz</button>
     </div>
   );
 };
